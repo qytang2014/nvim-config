@@ -37,3 +37,7 @@ sudo apt-get install -y nodejs
 mkdir ~/.config
 
 git clone https://github.com/qytang2014/nvim-config.git ~/.config/nvim
+
+# 使用方法
+
+终端输入：nvim
