@@ -126,7 +126,7 @@ return {
     {
         "jose-elias-alvarez/null-ls.nvim",
         event = "BufReadPre",
-        dependencies = { "mason.nvim" },
+        dependencies = { "mason.nvim", "nvim-lua/plenary.nvim"},
         opts = function()
             local nls = require("null-ls")
             return {
@@ -134,6 +134,7 @@ return {
                     -- nls.builtins.formatting.prettierd,
                     nls.builtins.formatting.stylua,
                     nls.builtins.diagnostics.flake8,
+                    nls.builtins.completion.spell,
                 },
             }
         end,

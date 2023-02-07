@@ -83,4 +83,11 @@ return {
         events = "VeryLazy",
         build = function() vim.fn["mkdp#util#install"]() end,
     },
+
+    --代码片段运行
+    {
+        'michaelb/sniprun',
+        build = 'bash ./install.sh',
+        enabled = false,
+    }
 }
