@@ -1,18 +1,4 @@
 vim.cmd [[
-    set nu
-    set mouse=a
-    set ignorecase
-
-	" add tab space
-    set ts=4
-	set softtabstop=4
-	set shiftwidth=4
-	set expandtab
-	set autoindent
-
-    set autoread
-
-    let g:rainbow_active = 1
 
     vnoremap <C-c> "+y   "支持在Visual模式下，通过C-c复制到系统剪切板
 
