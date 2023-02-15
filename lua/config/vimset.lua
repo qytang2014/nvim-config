@@ -1,5 +1,4 @@
 vim.cmd [[
-
     vnoremap <C-c> "+y   "支持在Visual模式下，通过C-c复制到系统剪切板
 
     """"""""""""""""""""""gtags配置

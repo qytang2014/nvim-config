@@ -33,6 +33,39 @@ if vim.fn.has("nvim-0.9.0") == 1 then
     opt.shortmess:append { C = true }
 end
 
+-- -------------------------gtags配置
+-- --set tags=./.tags;,.tags
+-- opt.cscopetag = true  --使用 cscope 作为 tags 命令
+-- opt.cscopeprg = "gtags-cscope" --使用 gtags-cscope 代替 cscope
+
+-- --enable gtags module
+-- vim.g.gutentags_modules = ['gtags_cscope']
+
+-- --change focus to quickfix window after search (optional).
+-- vim.g.gutentags_plus_switch = 1
+
+-- --gutentags 搜索工程目录的标志，当前文件路径向上递归直到碰到这些文件/目录名
+-- vim.g.gutentags_project_root = ['.root']
+
+-- --所生成的数据文件的名称
+-- vim.g.gutentags_ctags_tagfile = '.tags'
+
+-- vim.g.gutentags_file_list_command = 'find . -type f -name "*.java" -o -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.aidl" -o -name ".cxx" -o -name "*.cc" -o -name "*.C"'
+
+-- --将自动生成的 ctags/gtags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
+-- vim.g.gutentags_cache_dir = vim.fn(expand('~/.cache/tags'))
+
+-- --配置 ctags 的参数，老的 Exuberant-ctags 不能有 --extra=+q，注意
+-- vim.g.gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+-- vim.g.gutentags_ctags_extra_args += ['--c++-kinds=+px']
+-- vim.g.gutentags_ctags_extra_args += ['--c-kinds=+px']
+
+-- --如果使用 universal ctags 需要增加下面一行，老的 Exuberant-ctags 不能加下一行
+-- vim.g.gutentags_ctags_extra_args += ['--output-format=e-ctags']
+
+-- --禁用 gutentags 自动加载 gtags 数据库的行为
+-- --vim.g.gutentags_auto_add_gtags_cscope = 0
+-- --------------------------------------------------
 vim.g.rainbow_active = 1
 
 -- Fix markdown indentation settings
